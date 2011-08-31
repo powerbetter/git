@@ -1,0 +1,49 @@
+---
+layout: page
+title: Sunumlar
+---
+
+<div class="title">
+  <% unless TAG.empty? || true %>
+    <div id="tag-multicolumn">
+      <% TAG.each do |tag, presentations| %>
+        <a class="tag-link" href="#<%= tag %>"><%= tag %></a>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<div id="home">
+  <% unless TAG.empty? %>
+    <div id="presentation-tag">
+      <% TAG.each do |tag, presentations| %>
+        <h1 id="<%= tag %>"><%= tag %></h1>
+        <div id="presentation-multicolumn">
+          <p>
+            <% presentations.each do |name| %>
+              <% data = PRESENTATION[name] %>
+              <a class="presentation-link" href="<%= data[:target] %>">
+                  <img class="presentation-thumbnail" src="<%= data[:thumbnail] %>">
+                </a>
+            <% end %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <% PRESENTATION.each do |name, data| %>
+      <div id="presentation-multicolumn">
+        <p>
+          <% presentations.each do |name| %>
+            <% data = PRESENTATION[name] %>
+            <a class="presentation-link" href="<%= data[:target] %>">
+              <span class="presentation-thumbnail">
+                <img src="<%= data[:thumbnail] %>">
+              </span>
+            </a>
+          <% end %>
+        </p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
