@@ -13,7 +13,7 @@ Kasım 2010
 # Perde?
 
 Etkinliklerde yapılan sunumlar ve bu sunumların bulunduğu dizini anlatan bir
-terim.
+terim.  Kısaca **`p`**
 
 - Sunum bir "eser" türüdür; kod, kitap, günlük, makale, kısa teknik notlar
   gibi
