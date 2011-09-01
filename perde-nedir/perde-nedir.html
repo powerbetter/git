@@ -1439,14 +1439,15 @@ yapılacağını anlatmaktadır.</strong></p>
   APT kaynaklarına ekleyin</p>
 </li>
 <li>
-<p>Gerekli (ve önerilen) paketleri kurun</p>
+<p>Gerekli paketleri kurun</p>
 <pre><code>sudo apt-get install \
-    landslide rake imagemagick jpegoptim pngnq chromium-browser cutycapt
+    python-landslide ruby1.9.1 imagemagick jpegoptim pngnq cutycapt
 </code></pre>
 </li>
 <li>
 <p>Önerilen paketleri kurun (bu aşamada hata oluşmuşsa göz ardı edin)</p>
-<pre><code>sudo apt-get install ttf-bitstream-vera ttf-liberation ttf-ubuntu-title
+<pre><code>sudo apt-get install \
+    chromium-browser ttf-bitstream-vera ttf-liberation ttf-ubuntu-title
 </code></pre>
 </li>
 <li>
@@ -1497,12 +1498,12 @@ yapılacağını anlatmaktadır.</strong></p>
 <ul>
 <li>
 <p>sunum sitesinin Jekyll tabanlı kişisel sitenizle tutarlı bir görünümde
-  olması için kişisel sitenizde kullanılan "<code>_config.yml</code>"'yi
+  olması için kişisel sitenizde kullanılan <code>_config.yml</code>'yi
   kullanabilirsiniz</p>
 </li>
 <li>
-<p>kişisel sitenize ait "<code>_config.yml</code>" dosyasını kopyalayıp sadece depo
-  ismini değiştirmeniz yeterlidir</p>
+<p>kişisel sitenize ait <code>_config.yml</code> dosyasını kopyalayıp sadece depo ismini
+  değiştirmeniz yeterlidir</p>
 </li>
 </ul>
 </li>
@@ -1539,7 +1540,7 @@ yapılacağını anlatmaktadır.</strong></p>
             <section><ul>
 <li>
 <p>Deponuzda sunum konusuna uygun bir dizin oluşturun.  Örneğin "Debian Kurulumu"
-  konulu bir sunum için:</p>
+  konulu bir sunum için "<code>debian-kur</code>" ismini seçmişsek:</p>
 <pre><code>mkdir debian-kur &amp;&amp; cd debian-kur
 </code></pre>
 </li>
@@ -1636,8 +1637,8 @@ yapılacağını anlatmaktadır.</strong></p>
             <header><h1>Düzenle</h1></header>
             
             
-            <section><p>Gayet basit!  <a href="http://daringfireball.net/projects/markdown/">Markdown</a>
-sözdizimini kullanıyorsunuz.</p>
+            <section><p>Çok basit:  <a href="http://daringfireball.net/projects/markdown/">Markdown</a> sözdizimini
+kullanıyorsunuz.</p>
 <ul>
 <li>Slaytlar "<code>---</code>" ile ayrılıyor</li>
 <li>Slaytta birinci seviye bir başlık slayt başlığı oluyor</li>

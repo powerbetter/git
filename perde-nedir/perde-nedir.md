@@ -42,14 +42,15 @@ yapılacağını anlatmaktadır.**
 - Landslide Debian paketinin en güncel sürümü için "19" Debian paket deposunu
   APT kaynaklarına ekleyin
 
-- Gerekli (ve önerilen) paketleri kurun
+- Gerekli paketleri kurun
 
         sudo apt-get install \
-            landslide rake imagemagick jpegoptim pngnq chromium-browser cutycapt
+            python-landslide ruby1.9.1 imagemagick jpegoptim pngnq cutycapt
 
 - Önerilen paketleri kurun (bu aşamada hata oluşmuşsa göz ardı edin)
 
-        sudo apt-get install ttf-bitstream-vera ttf-liberation ttf-ubuntu-title
+        sudo apt-get install \
+            chromium-browser ttf-bitstream-vera ttf-liberation ttf-ubuntu-title
 
 - Gerekli (ve önerilen) Ruby Gem paketlerini kurun
 
@@ -69,18 +70,18 @@ yapılacağını anlatmaktadır.**
 - Sunum sitesinin Jekyll yapılandırması olan `_config.yml` dosyasını düzenleyin
 
     + sunum sitesinin Jekyll tabanlı kişisel sitenizle tutarlı bir görünümde
-      olması için kişisel sitenizde kullanılan "`_config.yml`"'yi
+      olması için kişisel sitenizde kullanılan `_config.yml`'yi
       kullanabilirsiniz
 
-    + kişisel sitenize ait "`_config.yml`" dosyasını kopyalayıp sadece depo
-      ismini değiştirmeniz yeterlidir
+    + kişisel sitenize ait `_config.yml` dosyasını kopyalayıp sadece depo ismini
+      değiştirmeniz yeterlidir
 
 ---
 
 # Başla
 
 - Deponuzda sunum konusuna uygun bir dizin oluşturun.  Örneğin "Debian Kurulumu"
-  konulu bir sunum için:
+  konulu bir sunum için "`debian-kur`" ismini seçmişsek:
 
         mkdir debian-kur && cd debian-kur
 
@@ -123,8 +124,8 @@ Sunum yapılandırması için aşağıdaki şablonu esas alabilirsiniz
 
 # Düzenle
 
-Gayet basit!  [Markdown](http://daringfireball.net/projects/markdown/)
-sözdizimini kullanıyorsunuz.
+Çok basit:  [Markdown](http://daringfireball.net/projects/markdown/) sözdizimini
+kullanıyorsunuz.
 
 - Slaytlar "`---`" ile ayrılıyor
 - Slaytta birinci seviye bir başlık slayt başlığı oluyor
