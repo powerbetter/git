@@ -19,7 +19,7 @@ rdiscount:
 # ----------------------------------------------------------------------
 
 # github hesap adı (ör. roktas)
-account: roktas
+account: dursunturan
 
 # github organizasyonu (ör. 19)
 organization: 19
@@ -27,7 +27,7 @@ organization: 19
 # bu siteyi üreten github deposu (ör. roktas.github.com)
 # dikkat!  depo çoğunlukla <account>.github.com formundadır.  fakat başka
 # bir depo da olabilir.  url parametresi için yazılan açıklamayı okuyun.
-repository: p
+repository: git
 
 # üretilen sitenin web adresi ne?  ör. "http://roktas.github.com".
 # CNAME kaydımız varsa bu adresi giriyoruz.  dikkat!  bu site
@@ -35,7 +35,7 @@ repository: p
 # örneğin http://roktas.github.com/test olabilir.  fakat bu durumda
 # kurulumdan sonra "master" dalını "gh-pages" dalına birleştirmelisiniz.
 # 	git checkout -b gh-pages
-url: http://roktas.me
+url: http://dursunturan.github.com
 
 # site görünümüne ilişkin olarak sitede mutlak adres yoluyla herhangi bir
 # sayfadan erişilebilecek ortak "dijital varlıklar"ın (ör. logolar) adresi.
@@ -44,13 +44,13 @@ url: http://roktas.me
 #
 # site görünümüne ait görsel ve javascript dosyaları chrome dizininde
 # olduğuna göre bu parametre için örnek bir değer:
-#
+#   
 # 	http://roktas.github.com/chrome
-assets: http://roktas.me/chrome
+assets: http://dursunturan.github.com/chrome
 
 # ----------------------------------------------------------------------
 # site parametreleri
-#
+# 
 # kalan tüm parameterleri "site.param" uzayına koyuyoruz
 # ----------------------------------------------------------------------
 param:
@@ -59,32 +59,32 @@ param:
         # --------------------------------------------------------------
         # unix kullanıcı adı (ör. roktas)
         # dikkat!  unix kullanıcı adı github hesabından farklı olabilir
-        user: roktas
+        user: dursunturan
         # tam kullanıcı adı (ör. Recai Oktaş)
-        fullname: Recai Oktaş
+        fullname: Dursun Can Turan
         # email adresi (ör. roktas@bil.omu.edu.tr)
-        email: roktas@bil.omu.edu.tr
+        email: dursunturan@gmail.com
         # ünvan (ör. Bilgisayar Mühendisliği Öğrencisi)
         title: <a href="http://ondokuz.biz/">19</a> üyesi
         # GnuPG kısa parmak izi (ör. DEADBEEF)
-        gpg: 3FD25C84
+        gpg: E51F38AC
         # twitter adresi (ör. http://19.status.net/roktas)
-        twitter: http://19.status.net/roktas
+        twitter: http://19.status.net/dursunturan
         # flick adresi (ör. http://flickr.com/photos/roktas)
-        flickr: http://flickr.com/photos/roktas
+        # flickr: http://flickr.com/photos/dursunturan
         # facebook adresi (ör. http://facebook.com/roktas)
-        facebook: http://facebook.com/roktas
+        facebook: http://facebook.com/dursunturan
         # özet akışı adresi (ör. http://feeds.feedburner.com/roktas)
-        feed: http://feeds.feedburner.com/roktas
+        feed: ~
 
         # --------------------------------------------------------------
         # sitede kullanılan bazı metinler
         # --------------------------------------------------------------
         section0: Web Günlüğü
-        section1: Makaleler
-        section2: İlkeler
-        section7: Çeşitli
-        section9: Notlar
+        section1: Git
+        section2: Etimoloji
+        section7: Uzaktan Eğitim
+        section9: GNU/Linux
 
         # --------------------------------------------------------------
         # ekstra özellik parametreleri
@@ -99,12 +99,12 @@ param:
         # ilişkili girdiler
         related: Diğer Girdiler
         # logo (ör. http://00010011.github.com/assets/19/19-normal-128x128.png)
-        logo: http://roktas.me/chrome/57/57-normal-128x128.png
+        logo: /chrome/19/raccoon.png
         # google site içi arama kutusu
         google: ~
         # google analytics takip numarası (ör. UA-1234567-8
-        googleanalyticsid: UA-1669029-2
+        googleanalyticsid: ~
         # sayfa yorumları için disqus site kaydı (ör. roktas)
-        disqus: roktas
+        disqus: dursunturan
         # GitHub şerit metni (ör. GitHub'dayım)
         ribbon: GitHub'dayım
