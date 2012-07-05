@@ -8,7 +8,7 @@
 # uzantılı sunumları üretir.
 
 require 'pathname'
-require '/usr/lib/ruby/gems/1.8/gems/pythonconfig-1.0.1/lib/pythonconfig.rb'
+require '/var/lib/gems/1.8/gems/pythonconfig-1.0.1/lib/pythonconfig.rb'
 require 'erb'
 
 # Landslide yapılandırma dosyaları
